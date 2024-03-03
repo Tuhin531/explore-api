@@ -13,6 +13,13 @@ const displayUser = user => {
      const name = user.results[0].name.first + ' ' + user.results[0].name.last;
      document.getElementById('name').innerHTML = name;
     console.log(user.results[0].gender);
+    
+    console.log(user);
+
+    const location = user.results[0].location.country;
+    document.getElementById('location').innerHTML = location;
+    console.log(user.results[0].location);
+   
 }
 
 loadUser();
