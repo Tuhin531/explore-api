@@ -1,5 +1,3 @@
-
-
 const loadQuote = () =>{
     fetch('https://api.kanye.rest/')
         .then(res => res.json())
